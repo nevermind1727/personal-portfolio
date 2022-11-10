@@ -1,0 +1,68 @@
+.homeContainer {
+    width: 100%;
+    align-items: center;
+    color: #3e497a;
+}
+
+.aboutMeContainer {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #21325e;
+    color: white;
+    & h2 {
+        font-size: 80px;
+        color: #e9d35b;
+        height: 50px;
+    }
+    & .prompt {
+        width: 40%;
+        font-size: 30px;
+    }
+}
+
+.skillsContainer {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        color: #3e497a;
+    }
+    & .skillsList {
+        list-style: none;
+        width: 60%;
+        & span {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMeContainer h2 {
+    font-size: 40px;
+  }
+
+  .aboutMeContainer .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skillsContainer {
+    text-align: center;
+  }
+  .skillsList {
+    padding: 0;
+  }
+
+  .skillsContainer h2 {
+    font-size: 30px;
+  }
+}

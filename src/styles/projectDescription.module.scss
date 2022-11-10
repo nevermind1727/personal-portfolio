@@ -1,0 +1,32 @@
+.projectDescContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .projectDescContainer h1 {
+    margin-top: 50px;
+    color: #3e497a;
+    font-size: 35px;
+  }
+  .projectDescContainer img {
+    width: 700px;
+    border-radius: 10px;
+  }
+  
+  .projectDescContainer p {
+    font-size: 40px;
+    color: #3e497a;
+  }
+  
+  .projectDescContainer svg {
+    cursor: pointer;
+    color: #3e497a;
+    transition: 200ms color ease;
+    &:hover {
+      color: #141d46;
+    }
+  }

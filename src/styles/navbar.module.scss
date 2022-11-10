@@ -1,0 +1,86 @@
+.navbarContainer {
+    background: #21325e;
+    width: 100%;
+    height: 100px;
+}
+
+.navbarLinksContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+    font-size: 1.5rem;
+}
+
+.navbarToggleButtonContainer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  & button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.open {
+    height: 100vh;
+    position: fixed;
+}
+
+.open .navbarLinksContainer {   
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+  
+.open a {
+    width: 100%;
+    text-align: center;
+    transition: 250ms color ease;
+    &:hover {
+        color: grey;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbarLinksContainer a {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarToggleButtonContainer {
+    display: flex;
+  }
+  .close a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbarToggleButtonContainer {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  .open {
+    height: 100px;
+  }
+
+  .open .navbarLinksContainer {
+    flex-direction: row;
+  }
+}
